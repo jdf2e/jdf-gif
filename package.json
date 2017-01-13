@@ -1,6 +1,6 @@
 {
   "name": "jdf-gif",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A mozjpeg wrapper for JDF",
   "license": "MIT",
   "repository": "jdf2e/jdf-gif",
@@ -10,13 +10,14 @@
     "url": "github.com/jdf2e"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "bin": {
     "jdf-gif": "cli.js"
   },
   "scripts": {
-    "postinstall": "node lib/install.js"
+    "postinstall": "node lib/install.js",
+    "test": "node test/index.js"
   },
   "files": [
     "index.js",
@@ -24,12 +25,13 @@
     "lib"
   ],
   "keywords": [
+    "jdf",
+    "jdfx",
     "gif",
     "img",
     "image",
     "compress",
     "minify",
-    "mozjpeg",
     "optimize"
   ],
   "dependencies": {
