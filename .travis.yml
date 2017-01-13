@@ -1,4 +1,7 @@
 sudo: true
+os:
+  - linux
+  - osx
 before_script:
   - node lib/install.js
 language: node_js
